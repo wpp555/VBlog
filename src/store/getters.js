@@ -1,6 +1,7 @@
 const getters = {
     token: state => state.token.token,
     githubUsername: state => state.configuration.githubUsername,
+    bindShow: state => state.configuration.bindShow,
     blogTitle: state => state.configuration.blogTitle,
     blogDescribe: state => state.configuration.blogDescribe,
     htmlTitle: state => state.configuration.htmlTitle,

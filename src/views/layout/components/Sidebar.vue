@@ -10,7 +10,7 @@
             </el-menu>
         </el-card>
 
-        <el-card shadow="never" style="margin-top: 20px;text-align: center">
+        <el-card shadow="never" style="margin-top: 20px;text-align: center" v-show='bindShow'>
             <div v-if="!token" style="font-size: 0.9rem;line-height: 1.5;color: #606c71;">
                 <el-tag type="danger" size="small">&nbsp;</el-tag>&nbsp;&nbsp; Token未绑定&nbsp;&nbsp;
                 <el-button type="text" @click="openTokenDialog">绑定</el-button>
@@ -49,7 +49,8 @@
             ...mapGetters([
                 'token',
                 'githubUsername',
-                'mini'
+                'mini',
+                'bindShow'
             ])
         },
         mounted() {

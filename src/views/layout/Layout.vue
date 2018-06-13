@@ -88,7 +88,7 @@
         <section class="main-content">
             <el-row>
                 <el-col :span="6" style="padding-right:10px">
-                    <sidebar></sidebar>
+                    <sidebar ></sidebar>
                 </el-col>
                 <el-col :span="18" style="padding-left:10px">
                     <app-main></app-main>
